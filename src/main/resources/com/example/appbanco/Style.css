@@ -1,0 +1,22 @@
+.fondo {
+    -fx-background-image: url("BackgroundLogin.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1000 700;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+.login{
+    -fx-background-color: rgba(0,0,0,.3);
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 18 18 18 18;
+}
+.TextPass{
+    -fx-background-color: rgba(255,255,255,.6);
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 18 18 18 18;
+}
+.LoginRegister{
+    -fx-background-color: rgba(39,144,196,.7);
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 18 18 18 18;
+}
