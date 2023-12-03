@@ -1,4 +1,6 @@
-package com.example.appbanco;
+package com.example.appbanco.controladores;
+
+import com.example.appbanco.excepciones.NoRegistroException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,9 +30,13 @@ public class ControladorIntermedio {
             usuariosRegistrados = new ArrayList<>();
         }
 
-        public void registrarUsuario(String nombreUsuario, String clave) {
-            Usuario nuevoUsuario = new Usuario(nombreUsuario, clave);
-            usuariosRegistrados.add(nuevoUsuario);
+        public void registrarUsuario(String nombreUsuario, String clave) throws NoRegistroException {
+            if (usuariosRegistrados.stream().anyMatch(usuario -> usuario.getNombreUsuario().equals(nombreUsuario) && usuario.getClave().equals(clave))) {
+                throw new NoRegistroException("Ya existe un usuario con estos datos.");
+            } else {
+                Usuario nuevoUsuario = new Usuario(nombreUsuario, clave);
+                usuariosRegistrados.add(nuevoUsuario);
+            }
         }
         public boolean verificarLogin(String nombreUsuario, String clave){
             for (Usuario usuario : usuariosRegistrados) {

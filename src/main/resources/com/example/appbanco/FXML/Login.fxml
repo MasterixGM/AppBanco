@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" styleClass="fondo" stylesheets="@../CSS/Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appbanco.controladores.ControladorLogin">
+    <bottom>
+
+    </bottom>
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="470.0" prefWidth="495.0"
+                  styleClass="login" BorderPane.alignment="CENTER">
+         <Label layoutX="88.0" layoutY="106.0" prefHeight="31.0" prefWidth="104.0" text="USUARIO:" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="21.0"/>
+            </font>
+            <effect>
+               <Blend opacity="0.4"/>
+            </effect>
+         </Label>
+         <Label layoutX="33.0" layoutY="167.0" prefHeight="31.0" prefWidth="157.0" text="CONTRASEÑA:" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="21.0"/>
+            </font>
+         </Label>
+         <TextField fx:id="mombreUsuarioF" layoutX="191.0" layoutY="109.0" prefHeight="25.0" prefWidth="210.0"
+                    styleClass="TextPass">
+            <font>
+               <Font size="15.0"/>
+            </font>
+         </TextField>
+         <PasswordField fx:id="claveUsuarioF" layoutX="191.0" layoutY="170.0" prefHeight="25.0" prefWidth="210.0"
+                        styleClass="TextPass">
+            <font>
+               <Font size="15.0"/>
+            </font>
+         </PasswordField>
+         <Button layoutX="88.0" layoutY="235.0" mnemonicParsing="false" onMouseClicked="#login" prefHeight="51.0"
+                 prefWidth="320.0" styleClass="LoginRegister" text="LOGIN"/>
+         <Button layoutX="88.0" layoutY="308.0" mnemonicParsing="false" onMouseClicked="#registrarUsuario"
+                 prefHeight="51.0" prefWidth="320.0" styleClass="LoginRegister" text="REGISTRARSE"/>
+      </AnchorPane>
+   </center>
+</BorderPane>

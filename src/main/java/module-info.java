@@ -2,7 +2,6 @@ module com.example.appbanco {
     requires javafx.controls;
     requires javafx.fxml;
 
-
-    opens com.example.appbanco to javafx.fxml;
-    exports com.example.appbanco;
+    exports com.example.appbanco.controladores;
+    opens com.example.appbanco.controladores to javafx.fxml;
 }

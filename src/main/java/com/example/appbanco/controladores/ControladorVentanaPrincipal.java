@@ -1,4 +1,4 @@
-package com.example.appbanco;
+package com.example.appbanco.controladores;
 
 public class ControladorVentanaPrincipal{
 }
