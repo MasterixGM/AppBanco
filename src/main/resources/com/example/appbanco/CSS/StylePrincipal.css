@@ -1,0 +1,36 @@
+.parent{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 30px;
+}
+.barraLateral{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 30px 30px 0px 0px;
+}
+.barraLateralIconos{
+    -fx-fill: #C1C1C1;
+}
+.pane{
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #C1C1C1;
+    -fx-background-radius: 0px 0px 30px 30px;
+    -fx-border-radius: 0px 0px 30px 30px;
+}
+.btnAdd{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #C1C1C1;
+    -fx-border-style: dashed;
+}
+.tarjeta{
+    -fx-background-color: linear-gradient(to right, #1A3384,#2B49B3);
+    -fx-background-radius: 10px;
+}
+.tarjetaSinColor{
+    -fx-background-color: #C1C1C1;
+    -fx-background-radius: 10px;
+}
+.circuloBackground{
+    -fx-background-color: #F3F3F3;
+    -fx-background-radius: 100%;
+}
