@@ -12,15 +12,6 @@ import java.time.format.DateTimeFormatter;
  */
 public class ControladorVentanaPrincipal {
 
-    // Etiquetas en la interfaz de usuario
-    @FXML
-    public Label SaludoUsuario;
-    @FXML
-    public Label Fecha;
-
-    // Instancia del gestor de usuarios
-    private ControladorIntermedio.GestorUsuarios gu;
-
     // Instancia de la ventana y del controlador de inicio de sesión
     private Stage stage;
     private ControladorLogin controladorLogin;
@@ -40,7 +31,7 @@ public class ControladorVentanaPrincipal {
      * @param gu Gestor de usuarios.
      */
     public void setGu(ControladorIntermedio.GestorUsuarios gu) {
-        this.gu = gu;
+        // Instancia del gestor de usuarios
     }
 
     /**
@@ -52,37 +43,6 @@ public class ControladorVentanaPrincipal {
     public void iniciar(Stage stage, ControladorLogin controladorLogin) {
         this.controladorLogin = controladorLogin;
         this.stage = stage;
-    }
-
-    /**
-     * Actualiza el saludo en la interfaz de usuario.
-     *
-     * @param nuevoSaludo Nuevo saludo.
-     */
-    public void actualizarSaludo(String nuevoSaludo) {
-        nuevoSaludo = "Ejemplo";
-        SaludoUsuario.setText(nuevoSaludo);
-    }
-
-    /**
-     * Actualiza las etiquetas de fecha y usuario en la interfaz de usuario.
-     *
-     * @param usuario        Usuario actual.
-     * @param SaludoUsuario  Etiqueta de saludo en la interfaz de usuario.
-     * @param Fecha          Etiqueta de fecha en la interfaz de usuario.
-     */
-    public static void actualizarFechayUsuario(ControladorIntermedio.Usuario usuario, Label SaludoUsuario, Label Fecha) {
-        if (SaludoUsuario != null && Fecha != null) {
-            SaludoUsuario.setText("Saludos " + usuario.getNombreUsuario() + ".");
-
-            LocalDateTime fechaIngreso = usuario.getFechaIngresoApp();
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
-            String fechaFormada = fechaIngreso.format(formatter);
-            Fecha.setText(fechaFormada);
-
-        } else {
-            System.err.println("Error: SaludoUsuario or Fecha are null");
-        }
     }
 
     /**
