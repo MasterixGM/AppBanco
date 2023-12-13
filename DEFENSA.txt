@@ -1,0 +1,12 @@
+La arquitectura propuesta para la aplicación del banco es decente, Aqui el porque:
+
+Separación de Responsabilidades (SoC): El código sigue el principio de SoC al dividir las funciones en clases separadas para el controlador de inicio de sesión, la clase mediadora y el controlador principal. Esto facilita la gestión del código y permite una mejor organización.
+
+Reusabilidad: La implementación demuestra la reusabilidad del código al utilizar clases y métodos que pueden ser invocados en diferentes partes de la aplicación. Por ejemplo, la función actualizarFechayUsuario en ControladorVentanaPrincipal puede ser utilizada para actualizar la interfaz de usuario en varias instancias.
+
+Manejo de Excepciones: Se han implementado excepciones personalizadas (NoRegistroException , NoLoginException y) para manejar casos específicos de errores relacionados con el registro y el inicio de sesión. Esto mejora la claridad del código y facilita la detección y corrección de errores.
+
+Interfaz Gráfica de Usuario (GUI): La aplicación utiliza JavaFX para crear una interfaz gráfica intuitiva. El uso de FXML para definir la estructura de la interfaz de usuario facilita la modificación y mantenimiento de la GUI.
+
+JavaDoc y Comentarios: El código está bien documentado con JavaDoc y comentarios, proporcionando información detallada sobre la funcionalidad de las clases y métodos. Esto facilita la comprensión del código y su mantenimiento a lo largo del tiempo.
+

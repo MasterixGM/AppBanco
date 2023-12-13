@@ -14,7 +14,7 @@ public class AppBanco extends Application {
         Parent root = loader.load();
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
-        com.example.appbanco.Controladores.ControladorLogin controladorLogin = loader.getController();
+        com.example.appbanco.controladores.ControladorLogin controladorLogin = loader.getController();
         controladorLogin.setStage(primaryStage);
         primaryStage.show();
     }

@@ -29,7 +29,7 @@
                <Font name="System Bold" size="21.0"/>
             </font>
          </Label>
-         <TextField fx:id="mombreUsuarioF" layoutX="191.0" layoutY="109.0" prefHeight="25.0" prefWidth="210.0"
+         <TextField fx:id="nombreUsuarioF" layoutX="191.0" layoutY="109.0" prefHeight="25.0" prefWidth="210.0"
                     styleClass="TextPass">
             <font>
                <Font size="15.0"/>

@@ -68,7 +68,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.appbanco/com.example.appbanco.Controladores.AppBanco</mainClass>
+                            <mainClass>com.example.appbanco/com.example.appbanco.controladores.AppBanco</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

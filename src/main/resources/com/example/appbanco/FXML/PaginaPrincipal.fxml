@@ -12,7 +12,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" styleClass="parent" stylesheets="@../CSS/StylePrincipal.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appbanco.Controladores.ControladorVentanaPrincipal">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" styleClass="parent" stylesheets="@../CSS/StylePrincipal.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appbanco.controladores.ControladorVentanaPrincipal">
    <left>
       <AnchorPane prefHeight="200.0" prefWidth="45.0" styleClass="barraLateral" BorderPane.alignment="CENTER">
          <FontAwesomeIconView fill="#4c4c4e" glyphName="BARS" layoutX="17.0" layoutY="25.0" size="1.5EM" AnchorPane.leftAnchor="14.3" AnchorPane.rightAnchor="14.3" AnchorPane.topAnchor="13.0" />
